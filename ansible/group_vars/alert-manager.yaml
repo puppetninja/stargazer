@@ -1,6 +1,5 @@
 ---
-alertmanager_slack_api_url: "https://hooks.slack.com/services/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"
-alertmanager_receivers:
+alertmanager_slack_api_url: # your webhook url here
   - name: slack
     slack_configs:
       - send_resolved: true
