@@ -1,0 +1,13 @@
+[node-exporter]
+sg-node-1 ansible_ssh_host=192.168.50.81 ansible_ssh_port=22
+sg-node-2 ansible_ssh_host=192.168.50.82 ansible_ssh_port=22
+sg-node-3 ansible_ssh_host=192.168.50.83 ansible_ssh_port=22
+
+[prometheus]
+sg-app ansible_ssh_host=192.168.50.88 ansible_ssh_port=22
+
+[alert-manager]
+sg-app ansible_ssh_host=192.168.50.88 ansible_ssh_port=22
+
+[grafana]
+sg-app ansible_ssh_host=192.168.50.88 ansible_ssh_port=22

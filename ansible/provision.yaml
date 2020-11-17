@@ -1,0 +1,38 @@
+---
+- name: Deploy node-exporter on node-exporter nodes
+  hosts: node-exporter:!disabled
+  tasks:
+    - name: Setup cloudalchemy.node-exporter role
+      include_role:
+        name: cloudalchemy.node-exporter
+
+#- name: Deploy prober nodes
+#  hosts: prober:!disabled
+#  tasks:
+#    - name: Setup cloudalchemy.blackbox-exporter role
+#      include_role:
+#        name: cloudalchemy.blackbox-exporter
+#    - name: Setup cloudalchemy.smokeping-prober role
+#      include_role:
+#        name: cloudalchemy.smokeping-prober
+
+- name: Deploy prometheus on prometheus nodes
+  hosts: prometheus:!disabled
+  tasks:
+    - name: Setup cloudalchemy.prometheus role
+      include_role:
+        name: cloudalchemy.prometheus
+
+- name: Deploy alert-manager on alert-manager nodes
+  hosts: alert-manager:!disabled
+  tasks:
+    - name: Setup cloudalchemy.alert-manager role
+      include_role:
+        name: cloudalchemy.alert-manager
+
+- name: Deploy grafana on grafana nodes
+  hosts: grafana:!disabled
+  tasks:
+    - name: Setup cloudalchemy.grafana role
+      include_role:
+        name: cloudalchemy.grafana

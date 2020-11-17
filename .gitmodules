@@ -1,0 +1,15 @@
+[submodule "ansible/roles/cloudalchemy.prometheus"]
+	path = ansible/roles/cloudalchemy.prometheus
+	url = https://github.com/cloudalchemy/ansible-prometheus.git
+[submodule "ansible/roles/cloudalchemy.grafana"]
+	path = ansible/roles/cloudalchemy.grafana
+	url = https://github.com/cloudalchemy/ansible-grafana.git
+[submodule "ansible/roles/cloudalchemy.alertmanager"]
+	path = ansible/roles/cloudalchemy.alertmanager
+	url = https://github.com/cloudalchemy/ansible-alertmanager.git
+[submodule "ansible/roles/cloudalchemy.node-exporter"]
+	path = ansible/roles/cloudalchemy.node-exporter
+	url = https://github.com/cloudalchemy/ansible-node-exporter.git
+[submodule "ansible/roles/cloudalchemy.blackbox-exporter"]
+	path = ansible/roles/cloudalchemy.blackbox-exporter
+	url = https://github.com/cloudalchemy/ansible-blackbox-exporter.git

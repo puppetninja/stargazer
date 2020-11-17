@@ -1,0 +1,25 @@
+---
+grafana_datasources:
+  - name: prometheus
+    type: prometheus
+    access: proxy
+    url: 'http://sg-app:9090/'
+    basicAuth: false
+
+grafana_security:
+  admin_user: admin
+  admin_password: admin
+
+#grafana_dashboards:
+#  - dashboard_id: 1860
+#    revision_id: 21
+#    datasource: prometheus
+#
+#  - dashboard_id: 7587
+#    revision_id: 3
+#    datasource: prometheus
+#
+#  - dashboard_id: 11335
+#    revision_id: 1
+#    datasource: prometheus
+#
